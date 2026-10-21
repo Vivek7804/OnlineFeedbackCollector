@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Admin Login | Feedback Hub{% endblock %}
+{% block content %}
+<div class="row justify-content-center"><div class="col-md-6 col-lg-5">
+  <div class="card border-0 shadow-sm rounded-4"><div class="card-body p-4 p-md-5">
+    <h1 class="h3 fw-bold mb-2">Admin sign in</h1><p class="text-secondary mb-4">Sign in to view collected feedback and reports.</p>
+    <form method="POST">
+      <div class="mb-3"><label for="username" class="form-label">Username</label><input id="username" name="username" class="form-control" autocomplete="username" required></div>
+      <div class="mb-4"><label for="password" class="form-label">Password</label><input id="password" name="password" type="password" class="form-control" autocomplete="current-password" required></div>
+      <button class="btn btn-primary w-100" type="submit">Sign in</button>
+    </form>
+    <p class="small text-secondary mt-3 mb-0">Local demo defaults: admin / admin123</p>
+  </div></div>
+</div></div>
+{% endblock %}
